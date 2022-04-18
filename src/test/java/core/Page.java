@@ -103,7 +103,7 @@ public class Page {
 	  report.endTest(test);
 	  report.flush();
       logs.debug("report created..");
-      
+      // send mail
       monitoringMail mail=new monitoringMail();
 	  logs.debug("gmail server init..");
 	  test.log(LogStatus.PASS, "Gmail Server inint");
